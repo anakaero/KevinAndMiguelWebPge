@@ -1,6 +1,13 @@
 #header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  width: 100%;
 }
 
 #header-img {
@@ -25,9 +32,14 @@ section {
   justify-content: center;
 }
 
-#hero{
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-display: flex;
-justify-content: center;
-align-items: center;
+@media (max-width: 420px) {
+  #header-img {
+    width: 150px;
+  }
 }
